@@ -291,7 +291,7 @@ header{
     font-size: 16px;
     font-weight: 500;
 }
-.projectsrow1 p,.projectsrow2 p,.projectsrow3 p{
+.projectsrow1 p,.projectsrow2 p,.projectsrow3 p,.projectsrow4 p,.projectsrow5 p{
     /* width: 290px; */
     /* padding: 6px 21px; */
     font-size: 14px;
@@ -316,7 +316,7 @@ header{
     font-family: 'Outfit', sans-serif;
     color: #07bb67;
 }
-.projectsrow1>div, .projectsrow2>div, .projectsrow3>div{
+.projectsrow1>div, .projectsrow2>div,.projectsrow3>div,.projectsrow4>div,.projectsrow5>div{
     width: 32%;
     border: 1px solid #ececec;
     margin-bottom: 15px;
@@ -325,15 +325,21 @@ header{
     border-radius: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
 }
-.projectsrow1>div:hover, .projectsrow2>div:hover, .projectsrow3>div:hover{
+.projectsrow3>div,.projectsrow5>div{
+    width: 413.125px !important;
+}
+.projectsrow1>div:hover, .projectsrow2>div:hover, .projectsrow3>div:hover,.projectsrow4>div:hover,.projectsrow5>div:hover{
     /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.projectsrow1,.projectsrow2,.projectsrow3{
+.projectsrow1,.projectsrow2,.projectsrow3,.projectsrow4,.projectsrow5{
     display: flex;
     justify-content: center;
     gap: 100px;
     padding: 40px 0px;
+}
+.projectscarouselimg1  img{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .codeviewdiv img{
     height: 22px;
@@ -567,6 +573,35 @@ header{
 .contactinfo img{
     width: 9%;
 }
+.frontbackbtnflex{
+    margin: 50px auto;
+    width: fit-content;
+}
+.frontendbtn,.backendbtn{
+        padding: 15px 40px 15px 40px;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 800;
+        border: none;
+        background-color: white;
+        border-bottom: 3px solid #07bb67;
+        color: #07bb67;
+        font-family: 'Poppins', sans-serif;
+        width: 355px;
+        margin: 15px 10px;
+}
+.frontendbtn:hover,.backendbtn:hover{
+    background-color: #07bb67 !important;
+    color: white !important;
+    border-bottom: 3.5px solid #07bb67;
+}
+.projectscarouselimg1 img{
+    width: 88% !important;
+    height: 360px;
+}
+/* .owl-carousel .owl-theme img{
+    width: 95%;
+} */
 @media screen and (max-width:500px) {
     .headercontent {
         display: block;
@@ -624,7 +659,7 @@ header{
         font-size: 11px;
         width: 125%;
     }
-    .projectsrow1>div, .projectsrow2>div, .projectsrow3>div {
+    .projectsrow1>div, .projectsrow2>div, .projectsrow3>div,.projectsrow4>div,.projectsrow5>div{
         width: 95%;
         margin: 0px auto;
     }
@@ -663,7 +698,7 @@ header{
     .skillslogos h4 {
         font-size: 45px;
     }
-    .projectsrow1, .projectsrow2, .projectsrow3 {
+    .projectsrow1, .projectsrow2, .projectsrow3,.projectsrow4,.projectsrow5 {
         display: grid;
     }
     .contactmediv p {
@@ -757,7 +792,7 @@ header{
         flex-wrap: wrap;
         display: inline-flex;
     }
-    .projectsrow1>div, .projectsrow2>div, .projectsrow3>div {
+    .projectsrow1>div, .projectsrow2>div, .projectsrow3>div,.projectsrow4>div,.projectsrow5>div {
         width: 43%;
     }
     .content {
