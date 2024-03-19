@@ -184,7 +184,7 @@ header{
     color: #07bb67;
     font-family: 'Outfit', sans-serif;
 }
-.abtmeright h3,.skillcontent h3,#contactmesection h3,#educationsection h3,#projectsection h3{
+.abtmeright h3,.skillcontent h3,#contactmesection h3,#educationsection h3,#projectsection h3,#certificatesection h3{
     width: fit-content;
     /* padding: 15px; */
     /* border-radius: 5px; */
@@ -192,9 +192,12 @@ header{
     font-size: 44px;
     font-family: 'Outfit', sans-serif;
 }
-#contactmesection h3,#educationsection h3{
+#contactmesection h3,#educationsection h3,#certificatesection h3{
     margin: 0px auto;
     font-family: 'Outfit', sans-serif;
+}
+#certificatesection h3{
+    margin: 0px auto 18px !important;
 }
 .abtmeright{
     width:50%;
@@ -513,19 +516,19 @@ header{
     background-color: white;
     z-index: 5;
 }
-.eduexdiv{
+.eduexdiv,.certificationsdiv{
     display: flex;
     gap: 129px;
     justify-content: center;
     /* margin: 57px 0px; */
 }
-.eduexdiv h5{
+.eduexdiv h5,.certificationsdiv h5{
     font-size: 24px;
     padding: 7px 0px;
     font-weight: 600;
     font-family: 'Outfit', sans-serif;
 }
-.eduexdiv h6{
+.eduexdiv h6,.certificationsdiv h6{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
@@ -539,7 +542,7 @@ header{
     font-style: italic;
     color: gray;
 }
-.education>div,.experience>div{
+.education>div,.experience>div,.certificateleft>div,.certificateright>div{
     padding: 23px 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;   */
@@ -552,8 +555,8 @@ header{
     align-items: flex-start;
     gap: 25px;
 }
-#educationsection{
-    margin: 140px 0px 0px;
+#educationsection,#certificatesection{
+    margin: 80px 0px 0px;
 }
 .contactwrapper{
     display: flex;
@@ -596,12 +599,13 @@ header{
     border-bottom: 3.5px solid #07bb67;
 }
 .projectscarouselimg1 img{
-    width: 88% !important;
+    /* width: 88% !important; */
     height: 360px;
 }
-/* .owl-carousel .owl-theme img{
-    width: 95%;
-} */
+.owl-item .cloned{
+    width:500px !important;
+}
+
 @media screen and (max-width:500px) {
     .headercontent {
         display: block;
@@ -649,7 +653,7 @@ header{
         width: 263px;
         margin-top: 37px;
     }
-    .education, .experience {
+    .education, .experience,.certificateleft,.certificateright {
         width: 100% !important;
     }
     .skillcontent h3,#projectsection h3{
@@ -660,7 +664,7 @@ header{
         width: 125%;
     }
     .projectsrow1>div, .projectsrow2>div, .projectsrow3>div,.projectsrow4>div,.projectsrow5>div{
-        width: 95%;
+        width: 95% !important;
         margin: 0px auto;
     }
     .contactwrapper{
@@ -672,7 +676,7 @@ header{
     .subcontskill1 {
         width: 54% !important;
     }
-    .eduexdiv{
+    .eduexdiv,.certificationsdiv{
         display: block;
     }
     .abtmeleft{
@@ -687,8 +691,8 @@ header{
         flex-direction: column-reverse;
     }
     .skilltooldesc {
-        gap: 30px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
         justify-content: center;
     }
     .skillslogos img {
@@ -733,6 +737,18 @@ header{
     .submitmsgpopup {
         text-align: center;
     }
+    /* .projectscarouselimg1 img{
+        height: 141px;
+    } */
+    .projectscarouselimg1 img {
+        width: 100% !important;
+        height: 174px;
+    }
+    .projectscarouselimg1{
+        /* width: 148% !important;
+        margin: 0px 70px !important; */
+    }
+    
 }
 
 @media screen and (min-width:700px) and (max-width:850px) {
@@ -788,12 +804,12 @@ header{
         gap: 25px;
         margin: 65px 30px;
     }
-    .projectsrow1, .projectsrow2, .projectsrow3 {
+    .projectsrow1, .projectsrow2, .projectsrow3, .projectsrow4 {
         flex-wrap: wrap;
         display: inline-flex;
     }
     .projectsrow1>div, .projectsrow2>div, .projectsrow3>div,.projectsrow4>div,.projectsrow5>div {
-        width: 43%;
+        width: 43% !important;
     }
     .content {
         padding: 20px 20px;
@@ -816,14 +832,15 @@ header{
         flex-direction: column-reverse;
     }
     .profilediv img {
-        width: 400px;
+        width: 370px;
     }
-    .eduexdiv{
+    .eduexdiv,.certificationsdiv{
         gap: 48px 
     }
     .education, .experience {
         width: 47%;
     }
+
 }
 .mainskill{
     display: flex;
@@ -884,7 +901,7 @@ header{
 .mainsocialtext a:hover,.contactwrapper>div>div>a:hover,.contactwrapper>div>div>p>a:hover{
     color: black;
 }
-.education,.experience{
+.education,.experience,.certificateleft,.certificateright{
     width: 43%;
 }
 .contactleft{
